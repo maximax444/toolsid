@@ -27,6 +27,7 @@
         font-weight: 300
         font-size: 14px
         line-height: 20px
+        margin: 0
     &__uncommon
         font-weight: 700
         font-size: 16px
@@ -34,6 +35,8 @@
         text-transform: uppercase
         color: #1C7DAF
         max-width: 730px
+        margin-top: 66px
+        margin-bottom: 0
 .effect
     background: #1C7DAF
     padding-top: 41px
@@ -114,6 +117,34 @@
         padding: 18px 26px
 .integration
     padding: 96px 0
+    &__prev
+        top: 50%
+        margin-top: -15px
+        cursor: pointer
+        z-index: 5
+        left: 15px
+        position: absolute
+        width: 30px
+        height: 30px
+        display: flex
+        justify-content: center
+        align-items: center
+        img
+            width: 12px
+    &__next
+        top: 50%
+        margin-top: -15px
+        cursor: pointer
+        z-index: 5
+        right: 15px
+        position: absolute
+        width: 30px
+        height: 30px
+        display: flex
+        justify-content: center
+        align-items: center
+        img
+            width: 12px
     &__title
         margin: 0
         font-weight: 400
@@ -180,9 +211,6 @@
             background-color: #fff
             opacity: 0
             transition: all 0.5s
-        &:hover
-            span
-                opacity: 1
     &__line
         margin-bottom: 16px
         font-size: 14px
@@ -227,6 +255,7 @@
                     line-height: 16px
                     color: #FFFFFF
                     margin-bottom: 16px
+                    text-transform: none
                     &::before
                         content: ""
                         display: block
@@ -239,6 +268,8 @@
                         left: 0
 .work
     padding-bottom: 96px
+    &__next
+        display: none
     &__title
         margin: 0
         font-weight: 400
@@ -336,3 +367,114 @@
         &:last-child
             .work__img::after
                 display: none
+.fis
+    padding-bottom: 70px
+    &__wrap
+        display: flex
+        justify-content: space-between
+        grid-gap: 15px
+    &__cont
+        width: 470px
+    &__title
+        font-weight: 400
+        font-size: 30px
+        line-height: 42px
+        text-transform: uppercase
+        color: #1C7DAF
+        margin-top: 0
+        margin-bottom: 15px
+    &__subtitle
+        margin-top: 0
+        margin-bottom: 24px
+        font-size: 16px
+        line-height: 24px
+        text-transform: uppercase
+        max-width: 435px
+    &__text
+        p
+            font-weight: 300
+            font-size: 14px
+            line-height: 20px
+            margin-bottom: 20px
+            margin-top: 0
+    &__right
+        width: 600px
+    &__img
+        height: 340px
+        margin-bottom: 40px
+        img
+            width: 100%
+            height: 100%
+            object-fit: cover
+    &__slider
+        display: flex
+        align-items: center
+        justify-content: space-between
+        margin-left: -10px
+        margin-right: -10px
+    &__prev, &__next
+        padding: 10px
+    .swiper-slide
+        height: 103px
+        border: 1px solid transparent
+        padding: 4px
+        img
+            width: 100%
+            height: 100%
+        &.swiper-slide-active
+            border: 1px solid #2CB6BF
+.contacts
+    background: url('../img/contacts-bg.jpg') center no-repeat
+    background-size: cover
+    padding-top: 82px
+    padding-bottom: 114px
+    &__title
+        margin-top: 0
+        margin-bottom: 19px
+        font-weight: 400
+        font-size: 30px
+        line-height: 42px
+        text-transform: uppercase
+        color: #FFFFFF
+    &__subtitle
+        font-weight: 300
+        font-size: 14px
+        line-height: 20px
+        margin-top: 0
+        margin-bottom: 48px
+        color: #FFFFFF
+    &__form
+        display: flex
+        flex-wrap: wrap
+        align-items: flex-end
+        justify-content: space-between
+        grid-gap: 46px 0
+        ::placeholder
+            color: #fff
+        input
+            width: 556px
+            max-width: 48%
+            border: 0
+            border-bottom: 2px solid #fff
+            padding: 14px 0
+            font-weight: 400
+            font-size: 14px
+            line-height: 20px
+            color: #FFFFFF
+            background-color: transparent
+        button
+            padding: 18px 52px
+    &__bottom
+        width: 556px
+        max-width: 48%
+        display: flex
+        justify-content: space-between
+        align-items: center
+@media(min-width: 768px)
+    .integration
+        &__prev, &__next
+            display: none
+        &__block
+            &:hover
+                span
+                    opacity: 1

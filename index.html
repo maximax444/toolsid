@@ -56,7 +56,10 @@
             font-display: swap;
         }
     </style>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/style.min.css">
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
 
 <body>
@@ -66,49 +69,56 @@
                 <a href="" class="header__logo"><img src="img/logo.svg" alt=""></a>
                 <div class="header__right">
                     <ul class="header__menu">
-                        <li><a href="">Главная</a></li>
+                        <li><a href="#first">Главная</a></li>
                         <li><a href="">Истории успеха</a></li>
-                        <li><a href="">Контакты</a></li>
+                        <li><a href="#contacts">Контакты</a></li>
                     </ul>
-                    <a href="tel:+7 (495) 646 89 26" class="header__phone">+7 (495) 646 89 26</a>
-                    <a href="" class="header__call btn">обратный звонок</a>
+                    <div class="header__calls">
+                        <a href="tel:+7 (495) 646 89 26" class="header__phone">+7 (495) 646 89 26</a>
+                        <a href="#contacts" class="header__call btn">обратный звонок</a>
+                    </div>
                 </div>
+                <div class="header__burg"><span></span></div>
             </div>
         </div>
     </div>
-    <div class="first">
+    <div class="first" id="first">
         <header class="header">
             <div class="container">
                 <div class="header__wrap">
                     <a href="" class="header__logo"><img src="img/logo.svg" alt=""></a>
                     <div class="header__right">
                         <ul class="header__menu">
-                            <li><a href="">Главная</a></li>
+                            <li><a href="#first">Главная</a></li>
                             <li><a href="">Истории успеха</a></li>
-                            <li><a href="">Контакты</a></li>
+                            <li><a href="#contacts">Контакты</a></li>
                         </ul>
-                        <a href="tel:+7 (495) 646 89 26" class="header__phone">+7 (495) 646 89 26</a>
-                        <a href="" class="header__call btn">обратный звонок</a>
+                        <div class="header__calls">
+                            <a href="tel:+7 (495) 646 89 26" class="header__phone">+7 (495) 646 89 26</a>
+                            <a href="#contacts" class="header__call btn">обратный звонок</a>
+                        </div>
                     </div>
+                    <div class="header__burg"><span></span></div>
                 </div>
             </div>
         </header>
         <section class="main">
             <div class="container">
                 <div class="main__wrap">
-                    <div class="main__bot">
-                        <img src="img/main-bot.svg" alt="">
-                        <p>IT-ОБОРУДОВАНИЕ ДЛЯ АВТОМАТИЗАЦИИ ТОРГОВЛИ И&nbsp;СКЛАДА</p>
-                    </div>
+
                     <div class="main__cont">
                         <div class="main__subtitle">ПЕРВАЯ ИНТЕЛЛЕКТУАЛЬНАЯ</div>
                         <h1 class="main__title"><b>СИСТЕМА УПРАВЛЕНИЯ</b>
                             И&nbsp;АНАЛИЗА ИСПОЛЬЗОВАНИЯ
                             ОБОРУДОВАНИЯ</h1>
-                        <a href="" class="main__btn btn btn--black">Оставить заявку</a>
+                        <a href="#contacts" class="main__btn btn btn--black">Оставить заявку</a>
                     </div>
                     <div class="main__img">
                         <img src="img/main.png" alt="">
+                    </div>
+                    <div class="main__bot">
+                        <img src="img/main-bot.svg" alt="">
+                        <p>IT-ОБОРУДОВАНИЕ ДЛЯ АВТОМАТИЗАЦИИ ТОРГОВЛИ И&nbsp;СКЛАДА</p>
                     </div>
                 </div>
             </div>
@@ -117,7 +127,7 @@
     <section class="video">
         <div class="container">
             <div class="video__wrap">
-                <a href="" class="video__video">
+                <a data-fancybox href="https://www.youtube.com/watch?v=lPOwqDI4O0A" class="video__video">
                     <img src="img/video.jpg" alt="">
                     <span class="video__play">
                         <img src="img/play.svg" alt="">
@@ -127,6 +137,59 @@
                     <div class="video__subtitle">ПОДРОБНЕЕ О TOOLSiD</div>
                     <h2 class="video__title">Автоматизация выдачи ТСД / Шкаф для&nbsp;хранения ТСД</h2>
                     <a href="" class="video__btn btn">Смотреть на YouTube</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="fis">
+        <div class="container">
+            <div class="fis__wrap">
+                <div class="fis__cont">
+                    <h2 class="fis__title">ПЕРВАЯ ФИЗИЧЕСКИ ОСЯЗАЕМАЯ MDM&nbsp;СИСТЕМА <b>TOOLSiD</b></h2>
+                    <p class="fis__subtitle">Решение для безопасного хранения
+                        и&nbsp;анализа использования дорогостоящего оборудования и&nbsp;материалов</p>
+                    <div class="fis__text">
+                        <p>Устройство позволяет избежать ручного учета расходных материалов и&nbsp;сэкономить время
+                            сдачи и&nbsp;получения оборудования. Раскрывает широкие возможности сбора данных
+                            и&nbsp;их&nbsp;анализа
+                            для&nbsp;дальнейшего управления парком мобильного оборудования на&nbsp;складе. Осуществлять
+                            автоматическую выдачу ТСД
+
+                        </p>
+                        <p>Кроме того, TOOLSiD может использоваться как&nbsp;полноценное устройство промышленного
+                            вендинга
+                            для&nbsp;выдачи и&nbsp;контроля использования СИЗ, расходных материалов и&nbsp;инструментов
+                        </p>
+                    </div>
+                </div>
+                <div class="fis__right">
+                    <div class="fis__img">
+                        <img src="img/fis/1.png" alt="">
+                    </div>
+                    <div class="fis__slider">
+                        <div class="fis__prev fis__prev1">
+                            <img src="img/prev.svg" alt="">
+                        </div>
+                        <div class="swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="img/fis/1.png" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="img/fis/2.png" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="img/fis/3.png" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="img/fis/4.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="fis__next fis__next1">
+                            <img src="img/next.svg" alt="">
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -200,6 +263,78 @@
             </div>
         </div>
     </section>
+    <!-- <section class="skud">
+        <div class="container">
+            <div class="skud__top">
+                <h2 class="skud__title"></h2>
+                <p class="skud__subtitle"></p>
+            </div>
+            <ul class="skud__list">
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+            <div class="skud__title2"></div>
+            <div class="skud__wrap">
+                <div class="skud__left"></div>
+                <div class="skud__center"></div>
+                <div class="skud__right"></div>
+            </div>
+            <div class="skud-bot">
+                <div class="skud-bot__cont">
+                    <div class="skud-bot__title"></div>
+                    <p class="skud-bot__text"></p>
+                </div>
+                <div class="skud-bot__right">
+                    <div class="skud-bot__icon"></div>
+                    <div class="skud-bot__blue"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="into">
+        <div class="container">
+            <h2 class="into__title"></h2>
+            <div class="into__subtitle"></div>
+            <div class="into__tabs">
+                <div class="into__tab">
+                    <div class="into__tab-icon"></div>
+                    <div class="into__tab-cont"><span></span></div>
+                </div>
+                <div class="into__tab">
+                    <div class="into__tab-icon"></div>
+                    <div class="into__tab-cont"><span></span></div>
+                </div>
+                <div class="into__tab">
+                    <div class="into__tab-icon"></div>
+                    <div class="into__tab-cont"><span></span></div>
+                </div>
+            </div>
+            <div class="into__cont">
+                <div class="into__cont-block">
+                    <div class="into__wrap">
+                        <div class="into__main">
+                            <div class="into__blue"><span></span></div>
+                            <div class="into__text">
+                                <h3></h3>
+                                <ul>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                </ul>
+                                <p></p>
+                                <p></p>
+                            </div>
+                        </div>
+                        <div class="into__right"></div>
+                    </div>
+                </div>
+                <div class="into__cont-block"></div>
+                <div class="into__cont-block"></div>
+            </div>
+        </div>
+    </section> -->
     <section class="effect">
         <div class="container">
             <div class="effect__wrap">
@@ -233,30 +368,36 @@
             </ul>
             <div class="integration__wrap">
                 <div class="integration__col">
-                    <a href="" class="integration__block">
+                    <div class="integration__block" id="integration__block1">
+                        <div class="integration__prev"><img src="img/prev.svg" alt=""></div>
+                        <div class="integration__next"><img src="img/next.svg" alt=""></div>
                         <img src="img/integ1.svg" alt="">
                         <span><img src="img/integ1-1.png" alt=""></span>
-                    </a>
+                    </div>
                     <div class="integration__line"><b>Размер шкафа:</b> 1920 (высота), 1151 (ширина), 443&nbsp;(глубина,
                         с
                         учетом опоры)</div>
                     <div class="integration__line"><b>Размер ячеек:</b> 250 (высота), 132 (ширина)</div>
                 </div>
                 <div class="integration__col">
-                    <a href="" class="integration__block">
+                    <div class="integration__block" id="integration__block2">
+                        <div class="integration__prev"><img src="img/prev.svg" alt=""></div>
+                        <div class="integration__next"><img src="img/next.svg" alt=""></div>
                         <img src="img/integ2.svg" alt="">
                         <span><img src="img/integ2-1.png" alt=""></span>
-                    </a>
+                    </div>
                     <div class="integration__line"><b>Размер шкафа:</b> 1920 (высота), 1151 (ширина), 443&nbsp;(глубина,
                         с
                         учетом опоры)</div>
                     <div class="integration__line"><b>Размер ячеек:</b> 114 (высота), 220 (ширина)</div>
                 </div>
                 <div class="integration__col">
-                    <a href="" class="integration__block">
+                    <div class="integration__block" id="integration__block3">
+                        <div class="integration__prev"><img src="img/prev.svg" alt=""></div>
+                        <div class="integration__next"><img src="img/next.svg" alt=""></div>
                         <img src="img/integ3.svg" alt="">
                         <span><img src="img/integ3-1.png" alt=""></span>
-                    </a>
+                    </div>
                     <div class="integration__line"><b>Размер шкафа:</b> 1920 (высота), 1151 (ширина), 443&nbsp;(глубина,
                         с
                         учетом опоры)</div>
@@ -340,6 +481,9 @@
                     <div class="work__name">Неисправное устройство</div>
                 </div>
             </div>
+            <a href="" class="btn btn--black work__next">
+                Следующий шаг <img src="img/work-step.svg" alt="">
+            </a>
         </div>
     </section>
     <div class="functions">
@@ -376,12 +520,257 @@
                     </p>
                 </div>
             </div>
-            <p class="functions__uncommon">Мы можем решить ваши&nbsp;нестандартные задачи, создать
+            <p class="functions__uncommon">Мы можем решить ваши нестандартные задачи, создать
                 для&nbsp;вас&nbsp;сценарий, который
                 впишется конкретно в&nbsp;ваши условия работы!</p>
         </div>
     </div>
+    <section class="quiz">
+        <div class="container">
+            <h2 class="quiz__maintitle">МАЛЕНЬКИЙ ШАГ <br>
+                <b>К&nbsp;БОЛЬШИМ ПРЕИМУЩЕСТВАМ</b>
+            </h2>
+            <div class="quiz__top">
+                <div class="quiz__top-col">
+                    <span>Более рациональный подход к&nbsp;работе – это&nbsp;только начало эффективных изменений</span>
+                    <p>Система учета вносит свой вклад и&nbsp;в&nbsp;настройку оборота устройств,
+                        и&nbsp;в&nbsp;организацию контроля работы
+                        персонала. Освобождает время и&nbsp;деньги для&nbsp;других задач</p>
+                </div>
+                <div class="quiz__top-col">
+                    <span>Наше решение не&nbsp;только простое
+                        и&nbsp;эффективное, но&nbsp;и&nbsp;гибкое</span>
+                    <p>Безусловно, каждая компания уникальна.
+                        Мы&nbsp;готовы вникать именно в&nbsp;ваши бизнес-процессы, чтобы разработать уникальный,
+                        созданный под&nbsp;ваши условия продукт, который решает конкретно ваши задачи в&nbsp;ваших
+                        условиях работы</p>
+                </div>
+            </div>
+            <div class="quiz__wrap">
+                <div class="quiz__slider">
+                    <div class="quiz__slide active">
+                        <div class="quiz__titles">
+                            <div class="quiz__title">Цена</div>
+                            <div class="quiz__subtitle">Для расчета стоимости вашей конфигурации необходимо заполнить
+                                короткую анкету:</div>
+                        </div>
+                        <div class="quiz__control">
+                            <input type="text" placeholder="Наименование Вашей компании?">
+                            <div class="quiz__bot">
+                                <div class="quiz__pages"><span>1</span>/9</div>
+                                <div class="quiz__btns">
+                                    <div class="quiz__next btn">Следующий вопрос</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="quiz__slide">
+                        <div class="quiz__title">Желаемый размер ячейки <br>
+                            хранения</div>
+
+                        <div class="quiz__control">
+                            <input type="text" placeholder="Введите ответ">
+                            <div class="quiz__bot">
+                                <div class="quiz__pages"><span>2</span>/9</div>
+                                <div class="quiz__btns">
+                                    <div class="quiz__prev">
+                                        <img src="img/quiz-prev.svg" alt="">Предыдущий вопрос
+                                    </div>
+                                    <div class="quiz__next btn">Следующий вопрос</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="quiz__slide">
+                        <div class="quiz__title">Предполагаемое количество <br> ячеек хранения</div>
+
+                        <div class="quiz__control">
+                            <input type="text" placeholder="Введите ответ">
+                            <div class="quiz__bot">
+                                <div class="quiz__pages"><span>3</span>/9</div>
+                                <div class="quiz__btns">
+                                    <div class="quiz__prev">
+                                        <img src="img/quiz-prev.svg" alt="">Предыдущий вопрос
+                                    </div>
+                                    <div class="quiz__next btn">Следующий вопрос</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="quiz__slide">
+                        <div class="quiz__title">Предполагаемое количество <br> устройств (шкафов)</div>
+
+                        <div class="quiz__control">
+                            <input type="text" placeholder="Введите ответ">
+                            <div class="quiz__bot">
+                                <div class="quiz__pages"><span>4</span>/9</div>
+                                <div class="quiz__btns">
+                                    <div class="quiz__prev">
+                                        <img src="img/quiz-prev.svg" alt="">Предыдущий вопрос
+                                    </div>
+                                    <div class="quiz__next btn">Следующий вопрос</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="quiz__slide">
+                        <div class="quiz__title">Предполагаемое количество <br> интерфейсов взаимодействия <br>
+                            (считыватель + экран пользователя)</div>
+
+                        <div class="quiz__control">
+                            <input type="text" placeholder="Введите ответ">
+                            <div class="quiz__bot">
+                                <div class="quiz__pages"><span>5</span>/9</div>
+                                <div class="quiz__btns">
+                                    <div class="quiz__prev">
+                                        <img src="img/quiz-prev.svg" alt="">Предыдущий вопрос
+                                    </div>
+                                    <div class="quiz__next btn">Следующий вопрос</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="quiz__slide">
+                        <div class="quiz__title">Способы идентификации <br> пользователя (оставить необходимое)</div>
+
+                        <div class="quiz__control">
+                            <div class="quiz__radio">
+                                <label>
+                                    <input type="radio" name="r1" id="" checked><span><img src="img/check.svg"
+                                            alt=""></span>
+                                    <p>Карта скуд</p>
+                                </label>
+                                <label>
+                                    <input type="radio" name="r1" id=""><span><img src="img/check.svg" alt=""></span>
+                                    <p>Отпечаток пальца</p>
+                                </label>
+                                <label>
+                                    <input type="radio" name="r1" id=""><span><img src="img/check.svg" alt=""></span>
+                                    <p>FaceID</p>
+                                </label>
+                                <label>
+                                    <input type="radio" name="r1" id=""><span><img src="img/check.svg" alt=""></span>
+                                    <p>Другое</p>
+                                </label>
+                            </div>
+                            <div class="quiz__bot">
+                                <div class="quiz__pages"><span>6</span>/9</div>
+                                <div class="quiz__btns">
+                                    <div class="quiz__prev">
+                                        <img src="img/quiz-prev.svg" alt="">Предыдущий вопрос
+                                    </div>
+                                    <div class="quiz__next btn">Следующий вопрос</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="quiz__slide">
+                        <div class="quiz__title">Место хранения наиболее полной базы Пользователей, куда будет
+                            необходима интеграция с базой данных пользователей</div>
+
+                        <div class="quiz__control">
+                            <input type="text" placeholder="Введите ответ">
+                            <div class="quiz__bot">
+                                <div class="quiz__pages"><span>7</span>/9</div>
+                                <div class="quiz__btns">
+                                    <div class="quiz__prev">
+                                        <img src="img/quiz-prev.svg" alt="">Предыдущий вопрос
+                                    </div>
+                                    <div class="quiz__next btn">Следующий вопрос</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="quiz__slide">
+                        <div class="quiz__title">Ваше имя и E-mail</div>
+
+                        <div class="quiz__control">
+                            <input type="text" placeholder="ваше имя">
+                            <input type="email" placeholder="ваш E-mail">
+                            <div class="quiz__bot">
+                                <div class="quiz__pages"><span>8</span>/9</div>
+                                <div class="quiz__btns">
+                                    <div class="quiz__prev">
+                                        <img src="img/quiz-prev.svg" alt="">Предыдущий вопрос
+                                    </div>
+                                    <div class="quiz__next btn">Следующий вопрос</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="quiz__slide">
+                        <div class="quiz__title">Номер телефона</div>
+
+                        <div class="quiz__control">
+                            <input type="tel" placeholder="Ваш телефон">
+                            <div class="quiz__bot">
+                                <div class="quiz__pages"><span>9</span>/9</div>
+                                <div class="quiz__btns">
+                                    <div class="quiz__prev">
+                                        <img src="img/quiz-prev.svg" alt="">Предыдущий вопрос
+                                    </div>
+                                    <button class="quiz__next btn">Следующий вопрос</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="quiz__slide">
+                        <div class="quiz__end">Ваша заявка <br> отправлена успешно!</div>
+                    </div>
+                </div>
+
+                <div class="quiz__img">
+                    <img src="img/quiz.svg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="contacts" id="contacts">
+        <div class="container">
+            <h2 class="contacts__title">Связаться с нами</h2>
+            <p class="contacts__subtitle">Оставьте контакты, мы быстро свяжемся с Вами</p>
+            <form action="" class="contacts__form">
+                <input type="text" placeholder="Ваше имя*" required>
+                <input type="email" placeholder="Ваш E-mail*" required>
+                <input type="tel" placeholder="Контактный номер*" required>
+                <div class="contacts__bottom">
+                    <div class="g-recaptcha" data-sitekey="your_site_key"></div>
+                    <button class="btn contacts__btn">Отправить</button>
+                </div>
+            </form>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__wrap">
+                <div class="footer__left">
+                    <a href="#first" class="footer__logo">
+                        <img src="img/logo.svg" alt="">
+                    </a>
+                    <div class="footer__copy">© 2021 ООО “АТЕУКО”</div>
+                </div>
+                <div class="footer__cont">
+                    <div class="footer__center">
+                        <a href="" class="footer__polit">Политика конфиденциальности</a>
+                        <a href="" class="footer__phone">+7 (495) 646 89 26</a>
+                        <div class="footer__adres">г. Москва, Электролитный проезд, д.3, стр.79</div>
+                    </div>
+                    <div class="footer__right">
+                        <a href="" class="footer__mail">order@ateuco.ru</a>
+                        <a href="" class="footer__polit">Политика конфиденциальности</a>
+                        <a href="" class="footer__dev">
+                            <span>Сайт разработан в </span>
+                            <img src="img/hero-logo.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
     <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"
+        integrity="sha512-UXumZrZNiOwnTcZSHLOfcTs0aos2MzBWHXOHOuB0J/R44QB0dwY5JgfbvljXcklVf65Gc4El6RjZ+lnwd2az2g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
