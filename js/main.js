@@ -269,24 +269,27 @@ $("body").on('click', '[href*="#"]', function (e) {
   $('html,body').stop().animate({ scrollTop: $(this.hash).offset().top - fixed_offset }, 1000);
   e.preventDefault();
 });
-$(document).mouseup(function (e) { // событие клика по веб-документу
-  var div = $(".header__menu"); // тут указываем ID элемента
-  var div2 = $(".header__contact");
-  var div3 = $(".header__burg");
-  if (!div.is(e.target) // если клик был не по нашему блоку
-    && div.has(e.target).length === 0 && !div2.is(e.target) // если клик был не по нашему блоку
-    && div2.has(e.target).length === 0 && !div3.is(e.target) // если клик был не по нашему блоку
-    && div3.has(e.target).length === 0) { // и не по его дочерним элементам
-    $('.header .header__burg').removeClass('active');
-    $('.scrolled .header__burg').show();
-    $('.header__right').removeClass('active');
-  }
-});
+
+if ($(window).width() < 768) {
+  $(document).mouseup(function (e) { // событие клика по веб-документу
+    var div = $(".header__menu"); // тут указываем ID элемента
+    var div2 = $(".header__contact");
+    var div3 = $(".header__burg");
+    if (!div.is(e.target) // если клик был не по нашему блоку
+      && div.has(e.target).length === 0 && !div2.is(e.target) // если клик был не по нашему блоку
+      && div2.has(e.target).length === 0 && !div3.is(e.target) // если клик был не по нашему блоку
+      && div3.has(e.target).length === 0) { // и не по его дочерним элементам
+      $('.header .header__burg').removeClass('active');
+      $('.scrolled .header__burg').show();
+      $('.header__right').removeClass('active');
+    }
+  });
+}
 function noWw(event) {
   if ("1234567890+\(\)\- ".indexOf(event.key) != -1) {
 
   } else {
-      event.preventDefault();
+    event.preventDefault();
   }
 
 }
