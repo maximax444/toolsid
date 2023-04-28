@@ -1,5 +1,16 @@
 @media (max-width: 1239px)
-    .fis
+    .skud
+        &__center
+            width: 300px
+            &::before
+                transform: scale(0.7)
+                left: -130px
+                bottom: 80px
+            &::after
+                transform: scale(0.7)
+                right: -130px
+                bottom: 80px
+    .fis, .into
         &__right
             width: 500px
     .video
@@ -38,6 +49,54 @@
             font-size: 13px
             margin-bottom: 5px
 @media (max-width: 991px)
+    .into
+        &__tab
+            flex-direction: column
+        &__wrap
+            display: block
+        &__right
+            width: 600px
+        &__main
+            width: 100%
+            margin-bottom: 28px
+    .skud
+        &__list
+            flex-wrap: wrap
+            grid-gap: 20px
+            li
+                width: 100%
+                max-width: 100%
+                br
+                    display: none
+        &__wrap
+            flex-direction: column
+            align-items: center
+            grid-gap: 172px
+        &__left, &__right
+            width: 400px
+            align-items: center
+            p
+                text-align: center
+        &__center
+            width: 400px
+            &::before
+                transform: rotate(90deg)
+                left: 50%
+                margin-left: -57px
+                bottom: auto
+                top: -105px
+            &::after
+                transform: rotate(90deg)
+                right: 50%
+                margin-right: -57px
+                bottom: -115px
+        &-bot
+            display: block
+            &__cont
+                width: 100%
+                margin-bottom: 22px
+            &__right
+                width: 100%
     .fis
         &__wrap
             display: block
@@ -84,6 +143,66 @@
             width: 50%
             padding-right: 25px
 @media (max-width: 767px)
+    .into
+        &__tabs
+            display: none
+        &__right
+            width: 100%
+        &__cont
+            .into__tab
+                display: flex
+                flex-direction: row
+                width: 100%
+                max-width: 100%
+                margin-bottom: 21px
+                padding-bottom: 45px
+        &__end
+            display: block
+            width: 120px
+            display: flex
+            justify-content: center
+            align-items: center
+            grid-gap: 8px
+            font-weight: 500
+            font-size: 14px
+            line-height: 18px
+            text-transform: uppercase
+            color: #1C7DAF
+            margin: 0 auto
+            position: relative
+            padding-top: 38px
+            padding-bottom: 30px
+            cursor: pointer
+            &::before
+                content: ""
+                display: block
+                height: 1px
+                width: calc((100vw - 160px) / 2)
+                background: #D9D9D9
+                position: absolute
+                left: 100%
+                top: 47px
+            &::after
+                content: ""
+                display: block
+                height: 1px
+                width: calc((100vw - 160px) / 2)
+                background: #D9D9D9
+                position: absolute
+                right: 100%
+                top: 47px
+            img
+                transform: rotate(180deg)
+    .skud
+        &__top
+            display: block
+        &__title
+            max-width: 100%
+            margin-bottom: 14px
+        &__subtitle
+            text-align: left
+        &__top
+            margin-bottom: 24px
     .fis
         &__right
             width: 100%
@@ -111,6 +230,53 @@
         &__img
             width: 100%
 @media (max-width: 575px)
+    .into
+        padding-bottom: 30px
+        &__title
+            font-size: 21px
+            line-height: 30px
+            margin-bottom: 14px
+        &__subtitle
+            margin-bottom: 21px
+            font-size: 14px
+            line-height: 24px
+        &__blue
+            padding: 19px 24px
+            span
+                font-size: 14px
+        .swiper-slide
+            height: 83px
+    .skud
+        padding: 42px 0
+        &__title
+            font-size: 21px
+            line-height: 30px
+        &__subtitle
+            font-size: 14px
+            line-height: 24px
+        &__list
+            grid-gap: 14px
+            margin-bottom: 32px
+            li
+                padding-top: 21px
+                padding-bottom: 21px
+                padding-right: 14px
+                &::before
+                    top: 17px
+        &__title2
+            font-size: 16px
+            line-height: 24px
+            margin-bottom: 16px
+        &__wrap
+            margin-bottom: 53px
+        &__left, &__right, &__center
+            width: 100%
+            grid-gap: 14px
+        &-bot
+            &__title
+                margin-bottom: 14px
+            &__right
+                padding: 24px 25px
     .fis
         padding-bottom: 50px
         .swiper-slide
