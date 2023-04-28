@@ -190,6 +190,14 @@ swiper4.on('transitionEnd', function () {
 });
 $('div.quiz__next').on('click', function () {
   if ($(this).closest('.quiz__control').find('input').val() != '') {
+
+    let emaill = $(this).closest('.quiz__control').find('input[type=email]').val();
+    if ($(this).closest('.quiz__control').hasClass('we')) {
+      if (!isEmail(emaill)) {
+        $('input[type=email]').addClass('error');
+        return false;
+      }
+    }
     let quizNow = $('.quiz__slide.active');
     quizNow.next('.quiz__slide').addClass('active');
     quizNow.removeClass('active');
@@ -284,6 +292,10 @@ if ($(window).width() < 768) {
       $('.header__right').removeClass('active');
     }
   });
+}
+function isEmail(email) {
+  var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+  return regex.test(email);
 }
 function noWw(event) {
   if ("1234567890+\(\)\- ".indexOf(event.key) != -1) {
