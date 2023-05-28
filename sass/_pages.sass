@@ -1,0 +1,286 @@
+.page
+    padding-top: 112px
+    &__header
+        position: relative
+    &__title
+        font-weight: 400
+        font-size: 30px
+        line-height: 42px
+        text-transform: uppercase
+        color: #1C7DAF
+        max-width: 685px
+        margin: 0
+        margin-bottom: 44px
+.blog
+    &__wrap
+        padding-bottom: 120px
+        display: grid
+        grid-template-columns: repeat(3, 1fr)
+        grid-gap: 50px 27px
+    &__block
+        text-decoration: none
+    &__img
+        height: 280px
+        width: 100%
+        display: block
+        margin-bottom: 28px
+        overflow: hidden
+        img
+            width: 100%
+            height: 100%
+            object-fit: cover
+            transition: all 1s
+    &__name
+        font-weight: 700
+        font-size: 16px
+        line-height: 24px
+        text-transform: uppercase
+        color: #1C7DAF
+        margin-bottom: 19px
+        display: block
+    &__text
+        font-weight: 300
+        font-size: 14px
+        line-height: 20px
+        color: #000000
+        margin-bottom: 20px
+        display: block
+    &__link
+        padding: 5px 0
+        display: flex
+        align-items: center
+        justify-content: flex-end
+        grid-gap: 9px
+        transition: all 0.3s
+        font-weight: 400
+        font-size: 14px
+        line-height: 20px
+        color: #1C7DAF
+        &:hover
+            grid-gap: 20px
+    &__block
+        &:hover
+            .blog__img img
+                transform: scale(1.2)
+.con
+    &__wrap
+        display: flex
+        justify-content: space-between
+        padding-bottom: 60px
+    &__block
+        max-width: 32%
+        width: 380px
+        border: 1px solid #2CB6BF
+        padding: 29px 18px
+        display: flex
+        align-items: flex-start
+    &__img
+        width: 37px
+        margin-right: 17px
+    &__cont
+        width: calc(100% - 54px)
+    &__name
+        font-weight: 700
+        font-size: 16px
+        line-height: 24px
+        margin-bottom: 15px
+        text-transform: uppercase
+        color: #1C7DAF
+    &__link
+        font-weight: 300
+        font-size: 14px
+        line-height: 20px
+        color: #000000
+        text-decoration: none
+        transition: all 0.3s
+        &:hover
+            color: #1C7DAF
+    &__map
+        height: 470px
+.article
+    &__wrap
+        display: flex
+        justify-content: space-between
+        margin-bottom: 55px
+    &__left
+        width: 560px
+        max-width: 48%
+    &__blue
+        padding: 50px 32px
+        background: #E0EEEF
+        font-weight: 400
+        font-size: 16px
+        line-height: 24px
+        text-transform: uppercase
+        color: #1C7DAF
+        margin: 0
+        margin-bottom: 33px
+    &__dop
+        margin: 0
+        font-weight: 300
+        font-size: 14px
+        line-height: 20px
+        color: #000000
+    &__img
+        width: 600px
+        max-width: 50%
+        height: 360px
+        img
+            width: 100%
+            height: 100%
+            object-fit: cover
+    &__subtitle
+        font-weight: 400
+        font-size: 16px
+        line-height: 24px
+        text-transform: uppercase
+        max-width: 930px
+        color: #1C7DAF
+        margin-top: 0
+        margin-bottom: 30px
+    &__text
+        font-weight: 300
+        font-size: 14px
+        line-height: 20px
+        color: #000000
+        padding-bottom: 85px
+        p
+            margin-top: 0
+            margin-bottom: 20px
+        ul
+            margin: 0
+            margin-bottom: 33px
+            padding-left: 20px
+            li
+                margin-bottom: 20px
+    &__photo
+        display: flex
+        justify-content: center
+        padding-bottom: 85px
+        img
+            max-width: 100%
+    &-bot
+        padding-bottom: 120px
+        &__icon
+            height: 48px
+            margin-bottom: 22px
+        &__title
+            margin: 0
+            font-weight: 700
+            font-size: 16px
+            line-height: 24px
+            text-transform: uppercase
+            color: #1C7DAF
+            margin-bottom: 40px
+        &__wrap
+            display: grid
+            grid-template-columns: repeat(3, 1fr)
+            grid-gap: 65px
+        &__text
+            font-weight: 300
+            font-size: 14px
+            line-height: 20px
+            color: #000000
+            margin: 0
+@media(max-width: 1239px)
+    .blog
+        &__img
+            height: 240px
+    .article
+        &-bot
+            &__wrap
+                grid-gap: 25px
+@media(max-width: 991px)
+    .article
+        &__wrap
+            flex-direction: column-reverse
+            grid-gap: 40px
+        &__img
+            max-width: 100%
+            width: 100%
+        &__left
+            max-width: 100%
+            width: 100%
+    .con
+        &__block
+            flex-direction: column
+            grid-gap: 20px
+        &__cont
+            width: 100%
+    .blog
+        &__wrap
+            grid-template-columns: repeat(2, 1fr)
+        &__img
+            height: 280px
+@media(max-width: 767px)
+    .article
+        &-bot
+            &__wrap
+                grid-template-columns: repeat(1, 1fr)
+    .blog
+        &__wrap
+            grid-template-columns: repeat(1, 1fr)
+    .con
+        &__block
+            flex-direction: row
+            grid-gap: 0
+            max-width: 100%
+            width: 100%
+        &__wrap
+            flex-wrap: wrap
+            grid-gap: 14px
+@media(max-width: 575px)
+    .article
+        &__wrap
+            grid-gap: 25px
+            margin-bottom: 44px
+        &__img
+            margin-left: -20px
+            margin-right: -20px
+            width: calc(100% + 40px)
+            max-width: 100vw
+            height: 250px
+        &__blue
+            padding: 28px 25px
+            font-size: 14px
+            line-height: 24px
+        &__subtitle
+            margin-bottom: 26px
+        &__text
+            padding-bottom: 42px
+        &__photo
+            padding-bottom: 55px
+        &-bot
+            padding-bottom: 70px
+            &__title
+                margin-bottom: 31px
+            &__block
+                display: flex
+                align-items: flex-start
+            &__icon
+                width: 48px
+                margin-right: 25px
+                padding-top: 6px
+            &__text
+                max-width: calc(100% - 73px)
+    .page
+        padding-top: 110px
+        &__title
+            margin-bottom: 35px
+            font-size: 21px
+            line-height: 26px
+    .blog
+        &__wrap
+            grid-gap: 35px
+            padding-bottom: 60px
+        &__img
+            height: 250px
+        &__text
+            margin-bottom: 20px
+    .con
+        &__wrap
+            padding-bottom: 45px
+        &__block
+            padding: 18px 20px
+        &__name
+            margin-bottom: 14px

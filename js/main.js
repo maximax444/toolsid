@@ -235,32 +235,35 @@ $('.integration__next, .integration__prev').on('click', function () {
     $(this).closest('.integration__block').find('span').addClass('active')
   }
 });
-var hammertime = new Hammer(document.getElementById('integration__block1'));
-hammertime.on('swipeleft swiperight', function (ev) {
-  if ($('#integration__block1').find('span').hasClass('active')) {
-    $('#integration__block1').find('span').removeClass('active');
-  } else {
-    $('#integration__block1').find('span').addClass('active')
-  }
-});
+if (document.getElementById('integration__block1')) {
+  var hammertime = new Hammer(document.getElementById('integration__block1'));
+  hammertime.on('swipeleft swiperight', function (ev) {
+    if ($('#integration__block1').find('span').hasClass('active')) {
+      $('#integration__block1').find('span').removeClass('active');
+    } else {
+      $('#integration__block1').find('span').addClass('active')
+    }
+  });
 
-var hammertime2 = new Hammer(document.getElementById('integration__block2'));
-hammertime2.on('swipeleft swiperight', function (ev) {
-  if ($('#integration__block2').find('span').hasClass('active')) {
-    $('#integration__block2').find('span').removeClass('active');
-  } else {
-    $('#integration__block2').find('span').addClass('active')
-  }
-});
+  var hammertime2 = new Hammer(document.getElementById('integration__block2'));
+  hammertime2.on('swipeleft swiperight', function (ev) {
+    if ($('#integration__block2').find('span').hasClass('active')) {
+      $('#integration__block2').find('span').removeClass('active');
+    } else {
+      $('#integration__block2').find('span').addClass('active')
+    }
+  });
 
-var hammertime3 = new Hammer(document.getElementById('integration__block3'));
-hammertime3.on('swipeleft swiperight', function (ev) {
-  if ($('#integration__block3').find('span').hasClass('active')) {
-    $('#integration__block3').find('span').removeClass('active');
-  } else {
-    $('#integration__block3').find('span').addClass('active')
-  }
-});
+  var hammertime3 = new Hammer(document.getElementById('integration__block3'));
+  hammertime3.on('swipeleft swiperight', function (ev) {
+    if ($('#integration__block3').find('span').hasClass('active')) {
+      $('#integration__block3').find('span').removeClass('active');
+    } else {
+      $('#integration__block3').find('span').addClass('active')
+    }
+  });
+}
+
 $('.header__burg').on('click', function (e) {
   e.preventDefault();
   $('.header .header__burg').toggleClass('active');
@@ -305,3 +308,20 @@ function noWw(event) {
   }
 
 }
+ymaps.ready(function () {
+  var myMap = new ymaps.Map('map', {
+    center: [55.677123, 37.616378],
+    zoom: 14
+  }, {
+    searchControlProvider: 'yandex#search'
+  }),
+
+
+    myPlacemark = new ymaps.Placemark([55.677123, 37.616378], {
+      hintContent: 'г. Москва, Электролитный проезд, д.3, стр.79 ',
+      balloonContent: 'г. Москва, Электролитный проезд, д.3, стр.79 '
+    });
+
+  myMap.geoObjects
+    .add(myPlacemark);
+});

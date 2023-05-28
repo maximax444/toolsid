@@ -19,6 +19,21 @@
         padding-left: 20px
         padding-right: 20px
         margin: auto
+.bread
+    margin: 0
+    padding: 0
+    list-style-type: none
+    flex-wrap: wrap
+    display: flex
+    align-items: center
+    grid-gap: 4px
+    font-weight: 300
+    font-size: 14px
+    line-height: 20px
+    margin-bottom: 40px
+    a
+        color: #2CB6BF
+        text-decoration: none
 .btn
     background: #2CB6BF
     text-decoration: none
@@ -100,6 +115,8 @@
             color: #000000
     &.hide
         top: -100px
+        &.dop
+            top: 0
 .main
     height: 730px
     background: url('../img/main-bg.jpg') center no-repeat
@@ -413,6 +430,8 @@
         &__dev
             padding-bottom: 20px
 @media (max-width: 575px)
+    .bread
+        margin-bottom: 20px
     .header__logo
         width: 164px
         img
